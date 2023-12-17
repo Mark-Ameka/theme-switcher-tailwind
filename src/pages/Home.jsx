@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Topnav from "../components/Topnav";
 import Sidenav from "../components/Sidenav";
-import Main from "./Main";
+import Content from "./Content";
 
 function Home(props) {
   const [class_theme, setClassTheme] = useState("");
@@ -23,9 +22,8 @@ function Home(props) {
     <div>
       <div className="flex md:flex-row flex-col">
         <Sidenav func={handleThemeChange} />
-        <Topnav func={handleThemeChange} />
-        <div className="mx-auto md:max-w-4xl max-w-md">
-          <Main class_theme={class_theme} />
+        <div>
+          <Content class_theme={class_theme} />
         </div>
       </div>
     </div>

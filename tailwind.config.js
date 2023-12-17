@@ -7,8 +7,9 @@ module.exports = {
         lato: ["Lato"],
       },
       colors: {
-        card_bg: "var(--card_bg)",
-        card_text: "var(--card_text)",
+        card_bg: "rgba(var(--card_bg))",
+        card_text: "rgba(var(--card_text))",
+        card_btn: "rgba(var(--card_btn))",
       },
     },
   },

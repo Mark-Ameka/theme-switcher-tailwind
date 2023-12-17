@@ -5,16 +5,19 @@
 @tailwind utilities;
 
 .dark {
-  --card_bg: #ffff;
-  --card_text: #0000;
+  --card_bg: 255, 255, 255;
+  --card_text: 0, 0, 0;
+  --card_btn: 0, 0, 0;
 }
 
 .dark {
-  --card_bg: #111827;
-  --card_text: #f87171;
+  --card_bg: 17, 24, 39;
+  --card_text: 248, 113, 113;
+  --card_btn: 248, 113, 113;
 }
 
 .red {
-  --card_bg: #7f1d1d;
-  --card_text: #facc15;
+  --card_bg: 127, 29, 29;
+  --card_text: 250, 204, 21;
+  --card_btn: 250, 204, 21;
 }
