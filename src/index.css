@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark {
+  --card_bg: #ffff;
+  --card_text: #0000;
+}
+
+.dark {
+  --card_bg: #111827;
+  --card_text: #f87171;
+}
+
+.red {
+  --card_bg: #7f1d1d;
+  --card_text: #facc15;
+}
