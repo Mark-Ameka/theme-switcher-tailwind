@@ -8,7 +8,7 @@ function Main(props) {
   }, [props.class_theme]);
   return (
     <div>
-      <section class="bg-card_bg text-card_text">
+      <section class="bg-card_bg text-card_text rounded-xl">
         <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
           <div class="mx-auto max-w-lg text-center">
             <h2 class="text-3xl text-card_text font-bold sm:text-4xl">

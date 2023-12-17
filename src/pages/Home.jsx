@@ -22,7 +22,7 @@ function Home(props) {
     <div>
       <div className="flex md:flex-row flex-col">
         <Sidenav func={handleThemeChange} />
-        <div>
+        <div className="mx-auto flex items-center px-3 py-3">
           <Content class_theme={class_theme} />
         </div>
       </div>
