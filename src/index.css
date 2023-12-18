@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.dark {
+.light {
   --card_bg: 255, 255, 255;
   --card_text: 0, 0, 0;
   --card_btn: 0, 0, 0;
@@ -20,4 +20,28 @@
   --card_bg: 127, 29, 29;
   --card_text: 250, 204, 21;
   --card_btn: 250, 204, 21;
+}
+
+.retro {
+  --card_bg: 0, 27, 121;
+  --card_text: 237, 90, 179;
+  --card_btn: 22, 64, 214;
+}
+
+.earth {
+  --card_bg: 58, 77, 57;
+  --card_text: 236, 227, 206;
+  --card_btn: 169, 179, 136;
+}
+
+.coffee {
+  --card_bg: 101, 69, 31;
+  --card_text: 234, 198, 150;
+  --card_btn: 176, 146, 106;
+}
+
+.wedding {
+  --card_bg: 103, 114, 157;
+  --card_text: 254, 217, 237;
+  --card_btn: 155, 190, 200;
 }

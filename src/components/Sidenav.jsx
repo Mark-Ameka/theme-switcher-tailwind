@@ -6,6 +6,10 @@ function Sidenav(props) {
     { name: "light", backgroundColors: ["white", "black"] },
     { name: "dark", backgroundColors: ["#111827", "#f87171"] },
     { name: "red", backgroundColors: ["#7f1d1d", "#facc15"] },
+    { name: "retro", backgroundColors: ["#1640d6", "#ed5ab3"] },
+    { name: "earth", backgroundColors: ["#3a4d39", "#a9b388"] },
+    { name: "coffee", backgroundColors: ["#65451f", "#b0926a"] },
+    { name: "wedding", backgroundColors: ["#67729d", "#9bbec8"] },
   ];
 
   useEffect(() => {
@@ -24,9 +28,12 @@ function Sidenav(props) {
   };
 
   return (
-    <div>
-      <div className="sticky top-0 flex md:min-h-screen md:w-56 w-full md:flex-col flex-row bg-white text-neutral-900 shadow-xl">
+    <div className="sticky top-0">
+      <div className="md:sticky md:top-0 flex md:min-h-screen md:w-56 w-full md:flex-col flex-row bg-white text-neutral-900 shadow-xl overflow-x-auto">
         <nav className="flex-1">
+          <div className="hidden md:flex justify-center text">
+            <img className="h-20 w-20" src="/logo.png" alt="" />
+          </div>
           <ul className="flex md:flex-col flex-row gap-y-2 py-2">
             {colorData.map((color) => (
               <li key={color.name} className="px-2">
@@ -44,7 +51,7 @@ function Sidenav(props) {
                 >
                   <div className="flex justify-between">
                     {/* displaying the names of the theme */}
-                    <p>
+                    <p className="hidden md:block">
                       {color.name.charAt(0).toUpperCase() + color.name.slice(1)}
                     </p>
 
